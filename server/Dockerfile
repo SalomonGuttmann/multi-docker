@@ -1,5 +1,5 @@
 #FROM node:14.14.0-alpine
-FROM node:24-bookworm
+FROM node:24
 WORKDIR "/app"
 COPY ./package.json ./
 RUN npm install
