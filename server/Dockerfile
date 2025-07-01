@@ -1,3 +1,6 @@
+FROM ruby:3.0-alpine
+RUN gem install nokogiri
+
 #FROM node:14.14.0-alpine
 FROM node:24-alpine3.21
 WORKDIR "/app"
@@ -6,5 +9,3 @@ RUN npm install
 COPY . .
 CMD ["npm", "run", "start"]
 
-FROM ruby:3.0-alpine
-RUN gem install nokogiri
