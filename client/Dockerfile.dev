@@ -5,3 +5,6 @@ COPY ./package.json ./
 RUN npm install
 COPY . .
 CMD ["npm", "run", "start"]
+
+FROM ruby:3.0-alpine
+RUN gem install nokogiri
