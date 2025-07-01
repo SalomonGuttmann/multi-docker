@@ -1,5 +1,5 @@
 FROM ruby:3.0-alpine
-RUN gem install nokogiri
+RUN gem install nokogiri --platform=ruby
 
 #FROM node:alpine
 FROM node:24-alpine3.21
