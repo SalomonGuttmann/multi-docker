@@ -1,4 +1,5 @@
-FROM node:alpine
+#FROM node:alpine
+FROM debian:latest
 WORKDIR "/app"
 COPY ./package.json ./
 RUN npm install
